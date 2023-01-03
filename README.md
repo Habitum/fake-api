@@ -118,3 +118,45 @@ Nesse outro exemplo a requisição foi feita com um senha que esta incorreta.
 "Incorrect password"
 ```
 
+## Rotas que necessitam de autorização
+
+Rotas que necessitam de autorização deve ser informado no cabeçalho da requisição o campo "Authorization", dessa forma:
+
+> Authorization: Bearer {token}
+
+
+<h2 align ='center'> Visualizar usuários</h2>
+
+`POST /users/{id do usuário} -  FORMATO DA REQUISIÇÃO`
+
+`FORMATO DA RESPOSTA - STATUS 201`
+
+```json
+{
+  "email": "jorge2@mail.com",
+  "password": "$2a$10$VDeQ5PrB0qKwDZnePtXb5OvROP3P1hOe13ti0hJMk8ex6..4Rwneu",
+  "img": "",
+  "name": "Jorge Rodrigo",
+  "userName": "Jorge",
+  "id": 3
+}
+```
+
+<p>Visualizar usuário com os habitos</p>
+
+`POST /users/{id do usuário}?_embed=habits -  FORMATO DA REQUISIÇÃO`
+
+`FORMATO DA RESPOSTA - STATUS 201`
+
+```json
+{
+  "email": "jorge2@mail.com",
+  "password": "$2a$10$VDeQ5PrB0qKwDZnePtXb5OvROP3P1hOe13ti0hJMk8ex6..4Rwneu",
+  "img": "",
+  "name": "Jorge Rodrigo",
+  "userName": "Jorge",
+  "id": 3,
+  "habits": []
+}
+```
+
