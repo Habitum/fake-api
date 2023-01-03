@@ -84,7 +84,7 @@ Se caso a requisição foi feita sem o email ou senha essa sera a resposta.
 
 Caso dê tudo certo, a resposta será assim:
 
-`POST /login -  FORMATO DA RESPOSTA - STATUS 201`
+`POST /login -  FORMATO DA RESPOSTA - STATUS 200`
 ```json
 
 {
@@ -127,9 +127,9 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 
 <h2 align ='center'> Visualizar usuários</h2>
 
-`POST /users/{id do usuário} -  FORMATO DA REQUISIÇÃO`
+`GET /users/{id do usuário} -  FORMATO DA REQUISIÇÃO`
 
-`FORMATO DA RESPOSTA - STATUS 201`
+`FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
@@ -142,11 +142,36 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 }
 ```
 
+<b>Para Editar um Usuário:</b>
+
+Só é necessario mandar a alteração que quiser fazer, não precisa mandar todo o corpo de requisição novamente.
+
+`PATCH /habits/{id do usuário} - FORMATO DA REQUISIÇÃO`
+```json
+{
+  "bits": 10
+}
+```
+
+`FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+{
+  "email": "jorge@mail.com",
+  "password": "$2a$10$qukuz7y3/9I.pUDVPS/UH.Bc9/BvE4q4dgzF/9iJgQfDmO99tAhW.",
+  "img": "",
+  "name": "Jorge Rodrigo",
+  "userName": "Jorge",
+  "id": 3,
+  "bits": 10
+}
+```
+
 <p>Visualizar usuário com os habitos</p>
 
 `POST /users/{id do usuário}?_embed=habits -  FORMATO DA REQUISIÇÃO`
 
-`FORMATO DA RESPOSTA - STATUS 201`
+`FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
@@ -160,3 +185,118 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 }
 ```
 
+<h2 align ='center'> Criar Habitos para o seu perfil </h2>
+
+Sempre que for criar ou editar um habito sempre é preciso colocar o userId
+
+`POST /habits - FORMATO DA REQUISIÇÃO`
+```json
+{
+    "title": "Arrumar a casa",
+    "description": "Arrumando a casa",
+    "personal_reward": "Bolo de chocolate",
+    "dificulty": "medio",
+    "userId": 3
+}
+```
+
+O nivel de dificuldade sera dividido em 3 sendo eles: 
+
+  - Fácil
+  - Médio 
+  - Difícil
+  
+  
+`FORMATO DA RESPOSTA - STATUS 201`
+
+```json
+{
+    "title": "Arrumar a casa",
+    "description": "Arrumando a casa",
+    "personal_reward": "Bolo de chocolate",
+    "dificulty": "medio",
+    "userId": 3,
+    "id": 2
+}
+```
+ 
+ Para editar um Habito: 
+
+`PATCH /habits/{id do habito} - FORMATO DA REQUISIÇÃO`
+```json
+{
+    "title": "Arrumar",
+    "description": "Arrumando a casa",
+    "personal_reward": "Bolo de chocolate",
+    "dificulty": "medio",
+    "userId": 3
+}
+```
+
+`FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+{
+    "title": "Arrumar",
+    "description": "Arrumando a casa",
+    "personal_reward": "Bolo de chocolate",
+    "dificulty": "medio",
+    "userId": 3,
+    "id": 2
+}
+```
+
+Para ver todos o habitos: 
+
+`GET /habits -  FORMATO DA REQUISIÇÃO`
+
+`FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+[
+  {
+	"userId": 3,
+	"id": 1
+  },
+  {
+	"title": "Arrumar",
+	"description": "Arrumando a casa",
+	"personal_reward": "Bolo de chocolate",
+	"dificulty": "medio",
+	"userId": 3,
+	"id": 2
+   }
+]
+```
+
+Ver Apenas um habito em especifico: 
+
+`GET /habits/{id do habito} -  FORMATO DA REQUISIÇÃO`
+
+`FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+{
+  "title": "Arrumar",
+  "description": "Arrumando a casa",
+  "personal_reward": "Bolo de chocolate",
+  "dificulty": "medio",
+  "userId": 3,
+  "id": 2
+}
+```
+
+Para deletar um habito: 
+
+`GET /habits/{id do habito} -  FORMATO DA REQUISIÇÃO`
+
+```json
+{
+  "userId": 3,
+}
+```
+
+`FORMATO DA RESPOSTA - STATUS 200`
+```json
+[]
+```
