@@ -1,5 +1,21 @@
 {
   "users": [
+    {
+      "email": "leandro@mail.com",
+      "password": "$2a$10$4ARciev3ol6/986qMp6RaemWLabwt5RZS.vIuZFALrcxFkWpil3hi",
+      "name": "Leandro Veloso",
+      "userName": "Leonardo",
+      "id": 1
+    }
   ],
-  "habits": []
+  "habits": [
+    {
+      "title": "Arrumar a casa",
+      "description": "Arrumando a casa",
+      "personal_reward": "Bolo de chocolate",
+      "dificulty": "medio",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
