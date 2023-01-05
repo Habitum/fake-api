@@ -127,6 +127,39 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 
 <h2 align ='center'> Visualizar usuários</h2>
 
+Para mostrar todos os usuários: 
+
+`GET /users -  FORMATO DA REQUISIÇÃO`
+
+`FORMATO DA RESPOSTA - STATUS 200`
+
+```json
+[
+   {
+	"email": "mariano@mail.com",
+	"password": "$2a$10$W5xwM74rWL67bAU/68EHhuRbr876OGwWdbKOveYgyzZOWBhhdCkR2",
+	"img": "",
+	"name": "Mariano Andrade",
+	"userName": "Mariano",
+	"id": 1,
+	"habits": []
+  },
+  {
+	"email": "jorge@mail.com",
+	"password": "$2a$10$BrqxsGhj/JoTFgEsY.Uq7OjCdrHOeXyjpXeRtOyUicPaQIWhlYC46",
+	"img": "",
+	"name": "Jorge Rodrigo",
+	"userName": "jorge",
+	"id": 2,
+	"habits": []
+   }
+]
+```
+
+
+Para mostrar apenas o usuário logado: 
+
+
 `GET /users/{id do usuário} -  FORMATO DA REQUISIÇÃO`
 
 `FORMATO DA RESPOSTA - STATUS 200`
@@ -146,7 +179,7 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 
 Só é necessario mandar a alteração que quiser fazer, não precisa mandar todo o corpo de requisição novamente.
 
-`PATCH /habits/{id do usuário} - FORMATO DA REQUISIÇÃO`
+`PATCH /users/{id do usuário} - FORMATO DA REQUISIÇÃO`
 ```json
 {
   "bits": 10
@@ -288,7 +321,7 @@ Ver Apenas um habito em especifico:
 
 Para deletar um habito: 
 
-`GET /habits/{id do habito} -  FORMATO DA REQUISIÇÃO`
+`DELETE /habits/{id do habito} -  FORMATO DA REQUISIÇÃO`
 
 ```json
 {
