@@ -11,6 +11,14 @@
 
 ## **Endpoints**
 
+Login e senha para testes: 
+ ```json
+{
+	"email": "leandro@mail.com",
+	"password": "123456"
+}
+```
+
 
 A API tem um total de 4 endpoints
 
@@ -21,11 +29,10 @@ O url base da API é https://habitum-fakeapi-v1.onrender.com
 `POST /register -  FORMATO DA REQUISIÇÃO`
 ```json
 {
- "img": "",
- "name": "Jorge Rodrigo",
- "userName": "Jorge",
- "email": "jorge2@mail.com",
- "password": "******"
+	"name": "Leandro Veloso",
+	"userName": "Leonardo",
+	"email": "leandro@mail.com",
+	"password": "123456"
 }
 ```
 
@@ -36,11 +43,10 @@ Se tudo der certo essa sera a resposta:
 {
    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvcmdlMkBtYWlsLmNvbSIsImlhdCI6MTY3Mjc3NTg4MiwiZXhwIjoxNjcyNzc5NDgyLCJzdWIiOiIzIn0.eNXzswCHD94jtXsBALvBfldkaLGmWtLo4II9bSU04_M",
    "user": {
-	"email": "jorge2@mail.com",
-	"img": "",
-	"name": "Jorge Rodrigo",
-	"userName": "Jorge",
-	"id": 3
+	"email": "leandro@mail.com",
+	"name": "Leandro Veloso",
+	"userName": "Leonardo",
+	"id": 1
     }
 }
 ```
@@ -77,8 +83,8 @@ Se caso a requisição foi feita sem o email ou senha essa sera a resposta.
 `POST /login - FORMATO DA REQUISIÇÃO`
 ```json
 {
-   "email": "jorge2@mail.com",
-   "password": "******"
+	"email": "leandro@mail.com",
+	"password": "123456"
 }
 ```
 
@@ -88,14 +94,13 @@ Caso dê tudo certo, a resposta será assim:
 ```json
 
 {
-  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvcmdlMkBtYWlsLmNvbSIsImlhdCI6MTY3Mjc3NzIwNywiZXhwIjoxNjcyNzgwODA3LCJzdWIiOiIzIn0.dYTSjaUDEO58Sgf6rD2fOVy1yDmLL_uFBg4rDbTqIBU",
-    "user": {
-	"email": "jorge2@mail.com",
-	"img": "",
-	"name": "Jorge Rodrigo",
-	"userName": "Jorge",
-	"id": 3
-   }
+	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlYW5kcm9AbWFpbC5jb20iLCJpYXQiOjE2NzI5NDQzNTgsImV4cCI6MTY3Mjk0Nzk1OCwic3ViIjoiMSJ9.mpyzyIRuzotMOukNfYMtF70GPwUOPT-40eoURuMaKrQ",
+	"user": {
+		"email": "leandro@mail.com",
+		"name": "Leandro Veloso",
+		"userName": "Leonardo",
+		"id": 1
+	}
 }
 ```
 
