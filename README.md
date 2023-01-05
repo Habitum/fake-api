@@ -179,7 +179,7 @@ Para mostrar apenas o usuário logado:
 
 Só é necessario mandar a alteração que quiser fazer, não precisa mandar todo o corpo de requisição novamente.
 
-`PATCH /habits/{id do usuário} - FORMATO DA REQUISIÇÃO`
+`PATCH /users/{id do usuário} - FORMATO DA REQUISIÇÃO`
 ```json
 {
   "bits": 10
