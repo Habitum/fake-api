@@ -321,7 +321,7 @@ Ver Apenas um habito em especifico:
 
 Para deletar um habito: 
 
-`GET /habits/{id do habito} -  FORMATO DA REQUISIÇÃO`
+`DELETE /habits/{id do habito} -  FORMATO DA REQUISIÇÃO`
 
 ```json
 {
