@@ -4,18 +4,93 @@
       "email": "leandro@mail.com",
       "password": "$2a$10$4ARciev3ol6/986qMp6RaemWLabwt5RZS.vIuZFALrcxFkWpil3hi",
       "name": "Leandro Veloso",
-      "userName": "Leonardo",
+      "userName": "Leandro",
+      "bits": 25,
+      "stars": 1,
+      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "sequence": 10,
       "id": 1
+    },
+    {
+      "email": "luan@mail.com",
+      "password": "$2a$10$lsW989Zb80jaHX1ktb5OF.zDV0iCTci7rtG93TCIZzzW.Sdbc7ng2",
+      "name": "Luan Florencio",
+      "userName": "Luan",
+      "bits": 20,
+      "stars": 2,
+      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "sequence": 10,
+      "id": 2
+    },
+    {
+      "email": "gabi@mail.com",
+      "password": "$2a$10$hDfCKAichmG/xrgLtXgFX.Y9OCk8rXh28ayaq6FbVyR6uuyKuBOcK",
+      "name": "Gabi Fontoura",
+      "userName": "Gabi",
+      "bits": 80,
+      "stars": 5,
+      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "sequence": 21,
+      "id": 3
+    },
+    {
+      "email": "jacqueline@mail.com",
+      "password": "$2a$10$x0uaZSMJjX4g2bsyaXW7uumWrluQhfY/mlzPeEQb2h4xhJthaNouW",
+      "name": "Jacqueline Kajiya",
+      "userName": "Jacqueline",
+      "bits": 60,
+      "stars": 3,
+      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "sequence": 11,
+      "id": 4
+    },
+    {
+      "email": "jorge@mail.com",
+      "password": "$2a$10$PAbmZ8IGfyLqhaFTgeo/WeUbAFQMytAkxp0Rry1RxlWWMfJ2qVpbu",
+      "name": "Jorge Rodrigo",
+      "userName": "Jorge",
+      "bits": 10,
+      "stars": 0,
+      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "sequence": 1,
+      "id": 5
+    },
+    {
+      "email": "murilo@mail.com",
+      "password": "$2a$10$.hZnpMhDl5VB7NFzMHjKruc9y0dKM22e7LhBS.ErQZYB4vy9NENe.",
+      "name": "Murilo Sena",
+      "userName": "Murilo",
+      "bits": 30,
+      "stars": 2,
+      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "sequence": 8,
+      "id": 6
     }
   ],
   "habits": [
     {
       "title": "Arrumar a casa",
-      "description": "Arrumando a casa",
-      "personal_reward": "Bolo de chocolate",
+      "description": "Deixar a casa limpa e arrumanda",
+      "personal_reward": "Capuccino",
       "dificulty": "medio",
       "userId": 1,
       "id": 1
+    },
+    {
+      "title": "Comprar comida",
+      "description": "Ir ao mercado e comprar comida para a casa",
+      "personal_reward": "Café",
+      "dificulty": "facil",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Arrumar a casa",
+      "description": "Deixar a casa arrumada e limpa",
+      "personal_reward": "Bolo de chocolate",
+      "dificulty": "medio",
+      "userId": 5,
+      "id": 3
     }
   ]
 }
