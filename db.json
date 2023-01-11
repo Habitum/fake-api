@@ -7,7 +7,7 @@
       "userName": "Leandro",
       "bits": 25,
       "stars": 1,
-      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "img": "../../assets/profilePics/male_1 1.svg",
       "sequence": 10,
       "id": 1
     },
@@ -18,7 +18,7 @@
       "userName": "Luan",
       "bits": 20,
       "stars": 2,
-      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "img": "../../assets/profilePics/male_1 1.svg",
       "sequence": 10,
       "id": 2
     },
@@ -29,7 +29,7 @@
       "userName": "Gabi",
       "bits": 80,
       "stars": 5,
-      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "img": "../../assets/profilePics/female_1 1.svg",
       "sequence": 21,
       "id": 3
     },
@@ -40,7 +40,7 @@
       "userName": "Jacqueline",
       "bits": 60,
       "stars": 3,
-      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "img": "../../assets/profilePics/female_1 1.svg",
       "sequence": 11,
       "id": 4
     },
@@ -51,7 +51,7 @@
       "userName": "Jorge",
       "bits": 10,
       "stars": 0,
-      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "img": "../../assets/profilePics/male_1 1.svg",
       "sequence": 1,
       "id": 5
     },
@@ -62,7 +62,7 @@
       "userName": "Murilo",
       "bits": 30,
       "stars": 2,
-      "img": "https://www.figma.com/file/I1RUIEMXLJljjG87YdBpfT/Habitum?node-id=39%3A681&t=PLoUMZdrKnMjUWUg-4",
+      "img": "../../assets/profilePics/male_1 1.svg",
       "sequence": 8,
       "id": 6
     }
@@ -91,6 +91,38 @@
       "dificulty": "medio",
       "userId": 5,
       "id": 3
+    },
+    {
+      "title": "Ler Livros",
+      "description": "Começar a ler livros com frequencia",
+      "personal_reward": "Cha",
+      "dificulty": "medio",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "title": "Lavar Carros",
+      "description": "Lavar o carro",
+      "personal_reward": "Comprar um carro",
+      "dificulty": "dificil",
+      "userId": 2,
+      "id": 4
+    },
+    {
+     "title": "Ler Livros",
+      "description": "Começar a ler livros com frequencia",
+      "personal_reward": "Torta",
+      "dificulty": "medio",
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "title": "Lavar Carros",
+      "description": "Lavar o carro",
+      "personal_reward": "Comprar um carro",
+      "dificulty": "dificil",
+      "userId": 6,
+      "id": 4
     }
   ]
 }
