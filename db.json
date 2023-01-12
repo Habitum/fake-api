@@ -18,7 +18,7 @@
       "userName": "Luan",
       "bits": 20,
       "stars": 2,
-      "img": "./assets/male_1 1.svg",
+      "img": "../../assets/profilePics/male_1 1.svg",
       "sequence": 10,
       "id": 2
     },
