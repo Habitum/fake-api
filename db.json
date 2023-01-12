@@ -40,7 +40,7 @@
       "userName": "Jacqueline",
       "bits": 60,
       "stars": 3,
-      "img": "./assets/female_1 1.svg",
+      "img": "../../assets/profilePics/male_1 1.svg",
       "sequence": 11,
       "id": 4
     },
